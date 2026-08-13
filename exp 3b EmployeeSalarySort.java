@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class EmployeeSalarySort {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        ArrayList<Integer> salary = new ArrayList<>();
+
+        System.out.print("Enter number of employees: ");
+        int n = sc.nextInt();
+
+        System.out.println("Enter employee salaries:");
+        for (int i = 0; i < n; i++) {
+            salary.add(sc.nextInt());
+        }
+
+        Collections.sort(salary);
+
+        System.out.println("Sorted Employee Salaries:");
+        for (int s : salary) {
+            System.out.println(s);
+        }
+
+        sc.close();
+    }
+}
