@@ -1,0 +1,48 @@
+class Student {
+    int studentId;
+    String studentName;
+    String courseName;
+
+    static String institute = "ABC Institute";
+
+    Student(int id, String name, String course) {
+        studentId = id;
+        studentName = name;
+        courseName = course;
+    }
+
+    void display() {
+        System.out.println("Institute : " + institute);
+        System.out.println("Student ID : " + studentId);
+        System.out.println("Student Name : " + studentName);
+        System.out.println("Course Name : " + courseName);
+    }
+
+    public static void main(String[] args) {
+
+        Student s1 = new Student(101, "Neha", "Java Programming");
+        Student s2 = new Student(102, "Rahul", "Python Programming");
+
+        System.out.println("Student 1 Details");
+        s1.display();
+
+        System.out.println();
+
+        System.out.println("Student 2 Details");
+        s2.display();
+    }
+
+OUTPUT
+
+Student 1 Details
+Institute : ABC Institute
+Student ID : 101
+Student Name : Neha
+Course Name : Java Programming
+
+Student 2 Details
+Institute : ABC Institute
+Student ID : 102
+Student Name : Rahul
+Course Name : Python Programming
+}
