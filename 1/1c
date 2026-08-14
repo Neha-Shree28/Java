@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class ElectricityBill {
+    static double rate = 7.5;
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter units consumed: ");
+        int units = sc.nextInt();
+
+        double bill = units * rate;
+
+        System.out.println("Rate per Unit = " + rate);
+        System.out.println("Electricity Bill = " + bill);
+
+        sc.close();
+    }
+}
+
+OUTPUT
+
+Enter units consumed: 200
+Rate per Unit = 7.5
+Electricity Bill = 1500.0
