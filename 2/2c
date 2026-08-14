@@ -1,0 +1,30 @@
+class Student<T> {
+    T data;
+
+    Student(T data) {
+        this.data = data;
+    }
+
+    void display() {
+        System.out.println("Student Data: " + data);
+        System.out.println("Data Type: " + data.getClass().getSimpleName());
+    }
+
+    public static void main(String[] args) {
+        Student<Integer> s1 = new Student<>(95);
+        Student<String> s2 = new Student<>("Neha");
+
+        s1.display();
+        System.out.println();
+
+        s2.display();
+    }
+}
+
+OUTPUT
+
+Student Data: 95
+Data Type: Integer
+
+Student Data: Neha
+Data Type: String
