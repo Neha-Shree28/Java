@@ -1,0 +1,81 @@
+class BankAccount {
+    int accNo;
+    String name;
+    double balance;
+
+    BankAccount() {
+        accNo = 0;
+        name = "class BankAccount {
+    int accNo;
+    String name;
+    double balance;
+
+    BankAccount() {
+        accNo = 0;
+        name = "Unknown";
+        balance = 0.0;
+    }
+
+    BankAccount(int a, String n, double b) {
+        accNo = a;
+        name = n;
+        balance = b;
+    }
+
+    void display() {
+        System.out.println("Account Number: " + accNo);
+        System.out.println("Name: " + name);
+        System.out.println("Balance: " + balance);
+    }
+
+    public static void main(String args[]) {
+        BankAccount b1 = new BankAccount();
+        BankAccount b2 = new BankAccount(101, "Neha", 50000);
+
+        System.out.println("Default Constructor");
+        b1.display();
+
+        System.out.println("\nParameterized Constructor");
+        b2.display();
+    }
+}Unknown";
+        balance = 0.0;
+    }
+
+    // Parameterized constructor
+    BankAccount(int a, String n, double b) {
+        accNo = a;
+        name = n;
+        balance = b;
+    }
+
+    void display() {
+        System.out.println("Account Number: " + accNo);
+        System.out.println("Name: " + name);
+        System.out.println("Balance: " + balance);
+    }
+
+    public static void main(String args[]) {
+        BankAccount b1 = new BankAccount();
+        BankAccount b2 = new BankAccount(101, "Neha", 50000);
+
+        System.out.println("Default Constructor");
+        b1.display();
+
+        System.out.println("\nParameterized Constructor");
+        b2.display();
+    }
+
+    OUTPUT
+
+  Default Constructor
+Account Number: 0
+Name: Unknown
+Balance: 0.0
+
+Parameterized Constructor
+Account Number: 101
+Name: Neha
+Balance: 50000.0
+    
+}
