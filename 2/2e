@@ -1,0 +1,52 @@
+interface SmartDevice {
+    void operate();
+}
+
+class Fan extends Thread implements SmartDevice {
+    public void operate() {
+        System.out.println("Fan is running");
+    }
+
+    public void run() {
+        operate();
+    }
+}
+
+class Light extends Thread implements SmartDevice {
+    public void operate() {
+        System.out.println("Light is turned ON");
+    }
+
+    public void run() {
+        operate();
+    }
+}
+
+class AC extends Thread implements SmartDevice {
+    public void operate() {
+        System.out.println("AC is running");
+    }
+
+    public void run() {
+        operate();
+    }
+}
+
+public class SmartHome {
+    public static void main(String[] args) {
+
+        Fan fan = new Fan();
+        Light light = new Light();
+        AC ac = new AC();
+
+        fan.start();
+        light.start();
+        ac.start();
+    }
+}
+
+OUTPUT
+
+Fan is running
+Light is turned ON
+AC is running
