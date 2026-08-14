@@ -1,0 +1,23 @@
+public class ProductPrice {
+    public static void main(String[] args) {
+
+        double price = 2500.50;
+        Double objPrice = price;
+
+        System.out.println("Primitive Price: " + price);
+        System.out.println("Object Price: " + objPrice);
+
+        Double productPrice = 3500.75;
+        double newPrice = productPrice;
+
+        System.out.println("Object Product Price: " + productPrice);
+        System.out.println("Primitive Product Price: " + newPrice);
+    }
+}
+
+OUTPUT
+
+Primitive Price: 2500.5
+Object Price: 2500.5
+Object Product Price: 3500.75
+Primitive Product Price: 3500.75
