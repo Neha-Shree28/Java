@@ -1,0 +1,42 @@
+interface Bank {
+    void deposit(double amount);
+    void withdraw(double amount);
+}
+
+class Account implements Bank {
+    double balance = 5000;
+
+    public void deposit(double amount) {
+        balance = balance + amount;
+        System.out.println("Deposited: " + amount);
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+            System.out.println("Withdrawn: " + amount);
+        } else {
+            System.out.println("Insufficient Balance");
+        }
+    }
+
+    public static void main(String[] args) {
+        Account a = new Account();
+
+        System.out.println("Initial Balance: " + a.balance);
+
+        a.deposit(2000);
+        System.out.println("Balance after deposit: " + a.balance);
+
+        a.withdraw(1500);
+        System.out.println("Balance after withdrawal: " + a.balance);
+    }
+
+    OUTPUT
+
+Initial Balance: 5000.0
+Deposited: 2000.0
+Balance after deposit: 7000.0
+Withdrawn: 1500.0
+Balance after withdrawal: 5500.0
+}
