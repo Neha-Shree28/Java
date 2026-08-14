@@ -1,0 +1,27 @@
+class Book {
+    int bookId;
+    String title;
+
+    void getBookDetails() {
+        bookId = 101;
+        title = "Java Programming";
+    }
+}
+
+class Library extends Book {
+    void display() {
+        System.out.println("Book ID: " + bookId);
+        System.out.println("Book Title: " + title);
+    }
+
+    public static void main(String args[]) {
+        Library obj = new Library();
+        obj.getBookDetails();
+        obj.display();
+    }
+}
+
+OUTPUT
+
+Book ID: 101
+Book Title: Java Programming
