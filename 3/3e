@@ -1,0 +1,24 @@
+import java.awt.*;
+
+public class EmployeeInfo extends Frame {
+    EmployeeInfo() {
+        setTitle("Employee Information");
+        setLayout(new BorderLayout());
+        Label title = new Label("EMPLOYEE INFORMATION",
+                                Label.CENTER);
+        Label name = new Label("Name: Rahul");
+        Label id = new Label("Employee ID: 101");
+        Label salary = new Label("Salary: 50000");
+        Button button = new Button("Submit");
+        add(title, BorderLayout.NORTH);
+        add(name, BorderLayout.WEST);
+        add(id, BorderLayout.CENTER);
+        add(salary, BorderLayout.EAST);
+        add(button, BorderLayout.SOUTH);
+        setSize(500, 300);
+        setVisible(true);
+    }
+    public static void main(String[] args) {
+        new EmployeeInfo();
+    }
+}
